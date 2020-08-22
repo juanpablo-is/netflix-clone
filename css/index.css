@@ -24,7 +24,7 @@ img {
     right: 0;
     bottom: 0;
     position: absolute;
-    width: 100vw;
+    width: 100%;
     z-index: -1;
     height: 100vh;
     filter: brightness(50%);
@@ -33,7 +33,7 @@ img {
 /* HEADER  */
 
 #header {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     background-image: linear-gradient(to top, rgba(0, 0, 0, .8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, .8) 100%);
@@ -137,7 +137,7 @@ img {
 }
 
 #level-tv h3 {
-    font-size: 45px;
+    font-size: 50px;
     padding: 10px 0;
 }
 
@@ -150,4 +150,72 @@ img {
 #level-tv img {
     text-align: center;
     width: 100%;
+}
+
+/* QUESTION  */
+
+#panel-qa {
+    border-top: 10px solid #1c1c1c;
+    background-color: #000000;
+    color: white;
+}
+
+#panel-qa #contenedor {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#panel-qa #contenedor h2 {
+    margin: 0;
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#questions {
+    width: 100%;
+    margin: 40px 0;
+}
+
+.question {
+    background-color: #303030;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.qa-open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 35px;
+    cursor: pointer;
+}
+
+.qa-open h3 {
+    flex: 1;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.qa-close {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.open {
+    height: auto;
+    padding: 24px 18px;
+}
+
+.qa-close p {
+    border-top: 1px solid black;
+    padding: 25px;
+    font-size: 24px;
 }
