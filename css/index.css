@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+:root {
+    --fuente: 'Open Sans', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: var(--fuente);
+}
+
+img {
+    width: 100%;
+}
+
+#img-logo {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100vw;
+    z-index: -1;
+    height: 100vh;
+    filter: brightness(50%);
+}
+
+#header {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, .8) 100%);
+    flex-direction: column;
+}
+
+#header-topbar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-topbar img {
+    width: 150px;
+}
+
+#header-topbar button {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0;
+}
+
+#header-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 65%;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+#header-info h2 {
+    font-weight: bold;
+    width: 80%;
+    font-size: 45px;
+    line-height: 1.3;
+}
+
+#header-info h4 {
+    font-weight: 500;
+    padding: 10px 0;
+    font-size: 25px;
+}
+
+#header-info p {
+    font-size: 19px;
+}
+
+#header-input {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 20px;
+}
+
+#header-input input {
+    padding: 15px 0;
+    margin-bottom: 40px;
+}
+
+#header-input input[type='email'] {
+    flex: 2;
+}
+
+#header-input input[type='submit'] {
+    flex: 1;
+    background-color: #e50914;
+    color: white;
+    font-size: 22px;
+    border: none;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
